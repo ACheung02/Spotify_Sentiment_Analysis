@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
-{% block title %} Home Page {% endblock %}
+{% block title %} Spotify Sentiment Analysis {% endblock %}
 {% block content %}
-<h1>Test</h1>
+<p class = "intro">Welcome to the website of my dissertation project. This project aims to predict the moods of songs in a Spotify playlist by using both Spotify's track audio features and sentiment analysis of song lyrics, and feeding this data into a machine learning model. 
+    <br><br>
+    For this specific project, it will be used to analyse specifically the Top Songs of 2020 (and 2019, 2021) to look at the listening habits of people during the COVID-19 pandemic, and how they may have been affected. On this website, you will be able to see the results of my analysis - for example, the most common moods in each year's top songs, how useful sentiment analysis of lyrics is in mood prediction, and my justification of the choice in machine learning model.
+</p>
+
+<a href="{{ url_for('machine_learning') }}" class="btn btn-primary">Choosing a Machine Learning Model</a>
+<a href="{{ url_for('sentiment_analysis') }}" class="btn btn-primary">Sentiment Analysis on Song Lyrics</a>
 {% endblock %}
 
