@@ -1,0 +1,101 @@
+name,artist,danceability,energy,loudness,speechiness,acousticness,instrumentalness,tempo,valence,sentiment,predicted_mood
+deja vu,Olivia Rodrigo,0.439,0.61,-7.236,0.116,0.593,1.07e-05,181.088,0.172,0.9927,Calm
+MONTERO (Call Me By Your Name),Lil Nas X,0.61,0.508,-6.682,0.152,0.297,0.0,178.818,0.758,0.0982,Calm
+Beggin',Måneskin,0.714,0.8,-4.808,0.0504,0.127,0.0,134.002,0.589,0.9993,Excited
+Good Days,SZA,0.436,0.655,-8.37,0.0583,0.499,8.1e-06,121.002,0.412,0.877,Sad
+drivers license,Olivia Rodrigo,0.585,0.436,-8.761,0.0601,0.721,1.31e-05,143.874,0.132,0.6053,Sad
+Peaches (feat. Daniel Caesar & Giveon),Justin Bieber,0.677,0.696,-6.181,0.119,0.321,0.0,90.03,0.464,-0.9081,Calm
+Leave The Door Open,Bruno Mars,0.586,0.616,-7.964,0.0324,0.182,0.0,148.088,0.719,0.9912,Happy
+Save Your Tears (with Ariana Grande) (Remix),The Weeknd,0.65,0.825,-4.645,0.0325,0.0215,2.44e-05,118.091,0.593,0.9556,Excited
+Happier Than Ever,Billie Eilish,0.332,0.225,-8.697,0.0348,0.767,0.00349,81.055,0.297,-0.9563,Sad
+Easy On Me,Adele,0.604,0.366,-7.519,0.0282,0.578,0.0,141.981,0.13,0.9893,Sad
+Heartbreak Anniversary,Giveon,0.449,0.465,-8.964,0.0791,0.524,1.02e-06,89.087,0.543,0.9332,Sad
+Woman,Doja Cat,0.824,0.764,-4.175,0.0854,0.0888,0.00294,107.998,0.881,0.9277,Happy
+34+35,Ariana Grande,0.83,0.585,-6.476,0.094,0.237,0.0,109.978,0.485,0.9269,Calm
+love nwantiti (ah ah ah),CKay,0.727,0.739,-3.805,0.0411,0.365,0.00137,93.005,0.533,0.9923,Happy
+Fair Trade (with Travis Scott),Drake,0.666,0.465,-8.545,0.26,0.0503,0.0,167.937,0.292,0.9004,Excited
+Levitating (feat. DaBaby),Dua Lipa,0.702,0.825,-3.787,0.0601,0.00883,0.0,102.977,0.915,-0.9081,Happy
+good 4 u,Olivia Rodrigo,0.556,0.661,-5.052,0.204,0.3,0.0,168.56,0.668,0.9989,Calm
+Butter,BTS,0.759,0.459,-5.187,0.0948,0.00323,0.0,109.997,0.695,0.988,Happy
+Kiss Me More (feat. SZA),Doja Cat,0.762,0.701,-3.541,0.0286,0.235,0.000158,110.968,0.742,-0.9081,Happy
+STAY (with Justin Bieber),The Kid LAROI,0.591,0.764,-5.484,0.0483,0.0383,0.0,169.928,0.478,-0.9154,Excited
+All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),Taylor Swift,0.631,0.518,-8.771,0.0303,0.274,0.0,93.023,0.205,0.9971,Sad
+happier,Olivia Rodrigo,0.395,0.443,-9.72,0.133,0.765,9.67e-06,168.924,0.338,0.999,Sad
+telepatía,Kali Uchis,0.653,0.524,-9.016,0.0502,0.112,0.0,83.97,0.553,0.9325,Happy
+MONEY,LISA,0.831,0.554,-9.998,0.218,0.161,6.12e-05,140.026,0.396,0.9147,Excited
+Astronaut In The Ocean,Masked Wolf,0.778,0.695,-6.865,0.0913,0.175,0.0,149.996,0.472,0.9853,Excited
+INDUSTRY BABY (feat. Jack Harlow),Lil Nas X,0.741,0.691,-7.395,0.0672,0.0221,0.0,150.087,0.892,0.9974,Happy
+Need to Know,Doja Cat,0.664,0.609,-6.509,0.0707,0.304,0.0,130.041,0.194,-0.948,Calm
+Hurricane,Kanye West,0.587,0.561,-6.569,0.146,0.0466,0.0,80.009,0.351,0.9935,Calm
+Bad Habits,Ed Sheeran,0.808,0.897,-3.712,0.0348,0.0469,3.14e-05,126.026,0.591,-0.9951,Excited
+Hold On,Justin Bieber,0.658,0.634,-5.797,0.0413,0.0106,0.0,139.98,0.29,0.9744,Excited
+pov,Ariana Grande,0.487,0.534,-5.664,0.0555,0.36,0.0,131.798,0.173,0.998,Calm
+My Universe,Coldplay,0.588,0.701,-6.39,0.0402,0.00813,0.0,104.988,0.443,0.833,Excited
+Todo De Ti,Rauw Alejandro,0.78,0.718,-3.605,0.0506,0.31,0.000163,127.949,0.342,-0.8944,Excited
+You Right,Doja Cat,0.828,0.621,-6.414,0.0565,0.0164,0.00233,128.986,0.436,-0.6898,Excited
+willow,Taylor Swift,0.392,0.574,-9.195,0.17,0.833,0.00179,81.112,0.529,0.9855,Calm
+Heat Waves,Glass Animals,0.761,0.525,-6.9,0.0944,0.44,6.7e-06,80.87,0.531,0.8853,Calm
+I WANNA BE YOUR SLAVE,Måneskin,0.75,0.608,-4.008,0.0387,0.00165,0.0,132.507,0.958,-0.974,Happy
+The Business,Tiësto,0.798,0.62,-7.079,0.232,0.414,0.0192,120.031,0.235,0.9615,Calm
+Up,Cardi B,0.868,0.795,-6.044,0.269,0.0012,0.0193,166.0,0.819,-0.9985,Excited
+Baila Conmigo (with Rauw Alejandro),Selena Gomez,0.823,0.544,-7.132,0.0715,0.0215,0.00315,149.903,0.664,-0.9307,Excited
+Yonaguni,Bad Bunny,0.644,0.648,-4.601,0.118,0.276,0.0,179.951,0.44,-0.9719,Calm
+Body,Megan Thee Stallion,0.914,0.732,-6.1,0.241,0.0166,0.0,94.066,0.469,-0.9941,Excited
+Streets,Doja Cat,0.749,0.463,-8.433,0.0842,0.21,0.0382,90.035,0.189,0.996,Calm
+positions,Ariana Grande,0.737,0.802,-4.771,0.0878,0.468,0.0,144.015,0.682,0.9917,Happy
+traitor,Olivia Rodrigo,0.38,0.339,-7.885,0.0338,0.691,0.0,100.607,0.0849,-0.963,Sad
+Arcade (feat. FLETCHER),Duncan Laurence,0.446,0.395,-9.328,0.0365,0.815,0.00216,71.944,0.267,0.9705,Sad
+Build a Bitch,Bella Poarch,0.855,0.463,-7.454,0.0367,0.217,1.77e-05,102.931,0.866,0.9892,Happy
+DÁKITI,Bad Bunny,0.731,0.573,-10.059,0.0544,0.401,5.22e-05,109.928,0.145,-0.961,Sad
+Beautiful Mistakes (feat. Megan Thee Stallion),Maroon 5,0.713,0.676,-5.483,0.027,0.0377,0.0,99.048,0.721,-0.9579,Happy
+Shivers,Ed Sheeran,0.788,0.859,-2.724,0.0856,0.281,0.0,141.02,0.822,0.9974,Happy
+Solar Power,Lorde,0.735,0.47,-9.405,0.1,0.266,0.000105,87.971,0.897,0.6953,Happy
+We're Good,Dua Lipa,0.722,0.588,-5.932,0.0544,0.0319,0.0,134.01,0.59,0.9966,Happy
+WITHOUT YOU (with Miley Cyrus),The Kid LAROI,0.655,0.469,-6.257,0.0292,0.173,0.0,92.56,0.467,0.8109,Calm
+Love Story (Taylor’s Version),Taylor Swift,0.626,0.79,-4.302,0.0311,0.135,3.97e-06,119.082,0.416,0.9877,Excited
+late at night,Roddy Ricch,0.643,0.403,-11.254,0.41,0.343,0.0,98.54,0.111,0.9964,Calm
+Calling My Phone,Lil Tjay,0.907,0.393,-7.636,0.0539,0.451,1.35e-06,104.949,0.202,-0.6106,Calm
+RAPSTAR,Polo G,0.789,0.536,-6.862,0.242,0.41,0.0,81.039,0.437,-0.9951,Calm
+Girls Want Girls (with Lil Baby),Drake,0.767,0.438,-8.726,0.29,0.181,0.0,86.975,0.381,0.9004,Calm
+Whoopty,CJ,0.719,0.648,-7.6,0.125,0.2,0.0,140.201,0.66,-0.9933,Happy
+Mood (feat. iann dior),24kGoldn,0.701,0.716,-3.671,0.0361,0.174,0.0,91.007,0.732,-0.9081,Happy
+LA NOCHE DE ANOCHE,Bad Bunny,0.856,0.618,-4.892,0.286,0.0303,0.0,81.993,0.391,-0.9824,Excited
+Anyone,Justin Bieber,0.686,0.538,-8.026,0.0345,0.181,3.13e-06,115.884,0.584,0.9912,Happy
+Meet Me At Our Spot,THE ANXIETY,0.773,0.47,-7.93,0.0299,0.0153,0.000193,94.995,0.399,0.5036,Calm
+Afterglow,Ed Sheeran,0.641,0.324,-5.851,0.0299,0.698,0.0,110.184,0.273,0.9813,Calm
+GIRL LIKE ME,Black Eyed Peas,0.965,0.485,-8.784,0.191,0.0206,0.0237,124.025,0.312,0.9965,Excited
+BICHOTA,KAROL G,0.863,0.666,-4.158,0.152,0.212,0.000493,163.908,0.838,-0.9866,Excited
+Bandido,Myke Towers,0.713,0.617,-4.637,0.0887,0.122,0.0,168.021,0.682,-0.8894,Excited
+Prisoner (feat. Dua Lipa),Miley Cyrus,0.781,0.67,-3.912,0.0452,0.0103,0.0,127.99,0.595,0.9836,Excited
+Blinding Lights,The Weeknd,0.514,0.73,-5.934,0.0598,0.00146,9.54e-05,171.005,0.334,-0.1068,Excited
+Therefore I Am,Billie Eilish,0.889,0.34,-7.773,0.0697,0.218,0.13,94.009,0.716,-0.9814,Happy
+test drive,Ariana Grande,0.698,0.708,-4.943,0.0454,0.0251,0.0,115.036,0.322,-0.9321,Excited
+Lemonade,Internet Money,0.799,0.66,-6.153,0.079,0.256,0.0,140.04,0.471,-0.9674,Calm
+Watermelon Sugar,Harry Styles,0.548,0.816,-4.209,0.0465,0.122,0.0,95.39,0.557,0.9601,Happy
+Lost Cause,Billie Eilish,0.671,0.336,-8.494,0.241,0.705,0.00751,75.051,0.518,-0.9695,Calm
+Selfish Love (with Selena Gomez),DJ Snake,0.723,0.646,-7.973,0.102,0.0206,0.352,110.971,0.443,-0.9579,Excited
+What You Know Bout Love,Pop Smoke,0.584,0.547,-8.502,0.382,0.655,1.64e-06,83.917,0.56,0.998,Calm
+Dynamite,BTS,0.746,0.765,-4.41,0.0993,0.0112,0.0,114.044,0.737,0.995,Excited
+Head & Heart (feat. MNEK),Joel Corry,0.734,0.874,-3.158,0.0662,0.168,1.14e-05,122.953,0.905,0.9599,Happy
+Save Your Tears,The Weeknd,0.68,0.826,-5.487,0.0309,0.0212,1.24e-05,118.051,0.644,0.9223,Happy
+Best Friend (feat. Doja Cat),Saweetie,0.84,0.766,-4.12,0.136,0.00302,3.61e-06,94.018,0.402,0.9457,Excited
+What’s Next,Drake,0.781,0.594,-6.959,0.0485,0.0136,0.0,129.895,0.0628,0.9969,Excited
+On The Ground,ROSÉ,0.311,0.607,-6.578,0.11,0.0174,0.0,188.7,0.286,0.8572,Calm
+As I Am (feat. Khalid),Justin Bieber,0.595,0.543,-8.149,0.038,0.127,0.0,99.928,0.109,0.9947,Calm
+Met Him Last Night (feat. Ariana Grande),Demi Lovato,0.538,0.512,-4.548,0.0262,0.22,0.0,144.978,0.12,0.5962,Calm
+m y . l i f e (with 21 Savage & Morray),J. Cole,0.597,0.587,-7.026,0.137,0.0622,0.0,140.021,0.0753,-0.9612,Excited
+Your Power,Billie Eilish,0.634,0.285,-14.007,0.0807,0.937,0.000359,129.65,0.203,-0.9003,Sad
+Permission to Dance,BTS,0.702,0.741,-5.33,0.0427,0.00544,0.0,124.925,0.646,0.9692,Excited
+t r a n s p a r e n t s o u l feat. Travis Barker,WILLOW,0.39,0.83,-5.201,0.0563,0.0021,0.0,90.021,0.191,0.8293,Excited
+Motley Crew,Post Malone,0.797,0.631,-3.818,0.0786,0.0904,3.71e-06,129.915,0.288,0.6767,Excited
+Pepas,Farruko,0.762,0.766,-3.955,0.0343,0.00776,6.98e-05,130.001,0.442,0.5942,Excited
+THATS WHAT I WANT,Lil Nas X,0.737,0.846,-4.51,0.22,0.00614,0.0,87.981,0.546,0.9982,Excited
+Rumors (feat. Cardi B),Lizzo,0.827,0.731,-5.524,0.088,0.13,0.0,118.992,0.607,-0.9021,Excited
+Skate,Bruno Mars,0.708,0.598,-8.365,0.0291,0.037,0.0,112.027,0.698,0.8857,Happy
+Cold Heart - PNAU Remix,Elton John,0.796,0.798,-6.312,0.0317,0.034,4.19e-05,116.032,0.942,-0.9952,Happy
+Leave Before You Love Me (with Jonas Brothers),Marshmello,0.721,0.738,-4.77,0.0403,0.00226,4.41e-06,119.976,0.637,0.9606,Excited
+Girl From Rio,Anitta,0.692,0.639,-6.717,0.0352,0.00727,0.0,140.059,0.733,0.9997,Happy
+Summer of Love (Shawn Mendes & Tainy),Shawn Mendes,0.776,0.808,-4.501,0.117,0.0297,0.000127,123.988,0.494,0.9792,Excited
+Life Goes On,Oliver Tree,0.7,0.49,-5.187,0.076,0.186,0.0,79.982,0.569,0.9959,Calm
+Dick (feat. Doja Cat),StarBoi3,0.647,0.608,-6.831,0.42,0.13,0.0,125.994,0.474,-0.9993,Excited
+Praise God,Kanye West,0.798,0.545,-6.466,0.168,0.00904,9.48e-05,118.029,0.212,0.9411,Excited
