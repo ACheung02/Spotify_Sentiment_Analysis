@@ -147,5 +147,4 @@ def predict_mood(playlist_uri, pl_name):
 #predict_mood('spotify:playlist:2fmTTbBkXi8pewbUvG3CeZ', '2020')
 #predict_mood('spotify:playlist:5GhQiRkGuqzpWZSE7OU4Se', '2021')
 
-# this particular playlist gives NoneType error without the try/except: predict_mood('spotify:playlist:2UPaVzzRngdrjg81VVSv7q')
 
