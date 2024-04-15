@@ -26,6 +26,8 @@ spotify = spotipy.Spotify(client_credentials_manager=sp)
 
 
 #------------------------------
+#create_pl_csv is to create a CSV for a playlist that I am categorising its mood for (happy, sad, excited, calm)
+#sentiment_score is to get the compound NLTK VADER sentiment analysis score for each song's lyrics in the playlist
 
 
 #function to get all songs where the input is the playlist URI without needing the username

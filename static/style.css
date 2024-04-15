@@ -36,13 +36,13 @@ body {
 }
 
 .container {
-    padding-top: 60px;
+    padding-top: 50px;
     color: #ffffff;
 }
 
 .intro {
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .col-10 {
@@ -50,6 +50,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .btn-primary {
     background-color: #1db954; 
@@ -61,3 +62,28 @@ body {
     cursor: pointer; 
     padding: 10px 25px; 
 }
+
+hr.gradient {
+    margin: 30px;
+    width: 95%;
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(
+    90deg,
+    rgba(0,105,217,255) 0%,
+    rgba(6, 84, 170, 1) 25%,
+    rgba(29,185,84,255) 75%
+  );
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#dataset-options {
+    width: 150px; 
+}
+

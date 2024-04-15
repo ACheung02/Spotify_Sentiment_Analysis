@@ -88,30 +88,14 @@ def get_playlist(playlist_uri):
 
     
 def training_data():
-    df = pd.read_csv("PlaylistDatasets/Dataset.csv")
+    df = pd.read_csv('PlaylistDatasets/Dataset.csv')
     df = df.drop(['id', 'liveness'], axis=1)
 
     x = df.iloc[:, 2:-1].values #training features of all columns (except first 3 and mood column)
     y = df.iloc[:, -1].values #target variable of mood column
 
-    #encoding the target variable y (changes the mood column to number values)
-    #le = LabelEncoder()
-    #y = le.fit_transform(y)
-
     #splitting the data into training and testing sets
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
-
-    #standardising the data: https://simple-machine-learning-implementation-with-python.readthedocs.io/en/latest/Naive_Bayes_With_Sklearn.html
-    #scaler = StandardScaler()
-    #x_train = scaler.fit_transform(x_train)
-    #x_test = scaler.transform(x_test)
-
-    #prints what each encoded label means: https://stackoverflow.com/questions/42196589/any-way-to-get-mappings-of-a-label-encoder-in-python-pandas
-    #le.fit(df['mood'])
-    #le_name_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
-
-    #for labelling the confusion matrix with the mood names in le_name_mapping
-    #mood_names = list(le_name_mapping.keys())
 
     return x_train, y_train
 
@@ -146,5 +130,4 @@ def predict_mood(playlist_uri, pl_name):
 #predict_mood('spotify:playlist:37i9dQZF1DWVRSukIED0e9', '2019')
 #predict_mood('spotify:playlist:2fmTTbBkXi8pewbUvG3CeZ', '2020')
 #predict_mood('spotify:playlist:5GhQiRkGuqzpWZSE7OU4Se', '2021')
-
 

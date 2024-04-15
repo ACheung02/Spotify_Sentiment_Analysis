@@ -1,12 +1,59 @@
 {% extends 'base.html' %}
 {% block title %} Spotify Sentiment Analysis {% endblock %}
 {% block content %}
-<p class = "intro">Welcome to the website of my dissertation project. This project aims to predict the moods of songs in a Spotify playlist by using both Spotify's track audio features and sentiment analysis of song lyrics, and feeding this data into a machine learning model. 
+<p class="intro">Welcome to the website of my dissertation project. This project aims to predict the moods of songs in a Spotify playlist by using both Spotify's track audio features and sentiment analysis of song lyrics, and feeding this data into a machine learning model. 
     <br><br>
     For this specific project, it will be used to analyse specifically the Top Songs of 2020 (and 2019, 2021) to look at the listening habits of people during the COVID-19 pandemic, and how they may have been affected. On this website, you will be able to see the results of my analysis - for example, the most common moods in each year's top songs, how useful sentiment analysis of lyrics is in mood prediction, and my justification of the choice in machine learning model.
 </p>
 
-<a href="{{ url_for('machine_learning') }}" class="btn btn-primary">Choosing a Machine Learning Model</a>
-<a href="{{ url_for('sentiment_analysis') }}" class="btn btn-primary">Sentiment Analysis on Song Lyrics</a>
+<div class="button-container">
+    <a href="{{ url_for('machine_learning') }}" class="btn btn-primary">Choosing a Machine Learning Model</a>
+    <a href="{{ url_for('sentiment_analysis') }}" class="btn btn-primary">Sentiment Analysis on Song Lyrics</a>
+</div>
+
+<hr class="gradient">
+
+<div class="menu-container">
+    <select name="dropdown" id="dataset-options">
+        <option>Datasets</option>
+        <option value="1">Top Hits of 2019</option>
+        <option value="2">Top Hits of 2020</option>
+        <option value="3">Top Hits of 2021</option>
+    </select>
+
+    <div id="options">
+        <div class="option-1" hidden>
+            <p>2019 hits content ttttttttttttttttttttttttttttt</p>
+        </div>
+        <div class="option-2" hidden>
+            <p>2020 hits content ttttttttttttttttt</p>
+        </div>
+        <div class="option-3" hidden>
+            <p>2021 hits content ttttttttttttttttttttttt</p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+document.getElementById("dataset-options").addEventListener("change", function() {
+    document.querySelector(".option-1").hidden = true;
+    document.querySelector(".option-2").hidden = true;
+    document.querySelector(".option-3").hidden = true;
+
+    var selected = this.value;
+    if (selected === "1") {
+        document.querySelector(".option-1").hidden = false;
+    } 
+    else if (selected === '2') {
+        document.querySelector(".option-2").hidden = false;
+    } 
+    else if (selected === '3') {
+        document.querySelector(".option-3").hidden = false;
+    }
+}
+);
+</script>
+
 {% endblock %}
 
