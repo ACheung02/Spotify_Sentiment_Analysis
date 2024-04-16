@@ -130,4 +130,5 @@ def predict_mood(playlist_uri, pl_name):
 #predict_mood('spotify:playlist:37i9dQZF1DWVRSukIED0e9', '2019')
 #predict_mood('spotify:playlist:2fmTTbBkXi8pewbUvG3CeZ', '2020')
 #predict_mood('spotify:playlist:5GhQiRkGuqzpWZSE7OU4Se', '2021')
+predict_mood('spotify:playlist:56r5qRUv3jSxADdmBkhcz7', '2022')
 
