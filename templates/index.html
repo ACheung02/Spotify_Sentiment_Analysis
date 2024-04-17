@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block title %} Spotify Sentiment Analysis {% endblock %}
 {% block content %}
-<p class="intro">Welcome to the website of my dissertation project. This project aims to predict the moods of songs in a Spotify playlist by using both Spotify's track audio features and sentiment analysis of song lyrics, and feeding this data into a machine learning model. 
+<p id="intro">Welcome to the website of my dissertation project. This project aims to predict the moods of songs in a Spotify playlist by using both Spotify's track audio features and sentiment analysis of song lyrics, and feeding this data into a machine learning model. 
     <br><br>
-    For this specific project, it will be used to analyse specifically the Top Songs of 2020 (and 2019, 2021) to look at the listening habits of people during the COVID-19 pandemic, and how they may have been affected. On this website, you will be able to see the results of my analysis - for example, the most common moods in each year's top songs, how useful sentiment analysis of lyrics is in mood prediction, and my justification of the choice in machine learning model.
+    For my project, it will be used to analyse the Top Songs of 2019 - 2022 to look at the listening habits of people during the COVID-19 pandemic, and how they may have been affected. Here you will be able to see the results of my analysis - for example, the most common moods, how useful sentiment analysis of lyrics is in mood prediction, and my justification of choice in machine learning model. A logistic regression model was used to predict the moods - all charts shown are therefore based on this model.
 </p>
 
 <div class="button-container">
@@ -13,43 +13,55 @@
 
 <hr class="gradient">
 
+<p id="dataset-desc">Here, you can view the data analysis plots within each of these years' most listened to songs, and the predicted moods inside the playlists. Choose a dataset between the years of 2019 - 2022 (before, during, and after COVID-19 lockdowns):</p>
+
 <div class="menu-container">
     <select name="dropdown" id="dataset-options">
         <option>Datasets</option>
         <option value="1">Top Hits of 2019</option>
         <option value="2">Top Hits of 2020</option>
         <option value="3">Top Hits of 2021</option>
+        <option value="4">Top Hits of 2022</option>
     </select>
 
     <div id="options">
-        <div class="option-1" hidden>
-            <p>2019 hits content ttttttttttttttttttttttttttttt</p>
+        <div id="option-1" hidden>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVRSukIED0e9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div> 
+            <p>2019 hits content tttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
         </div>
-        <div class="option-2" hidden>
+        <div id="option-2" hidden>
             <p>2020 hits content ttttttttttttttttt</p>
         </div>
-        <div class="option-3" hidden>
+        <div id="option-3" hidden>
             <p>2021 hits content ttttttttttttttttttttttt</p>
+        </div>
+        <div id="option-4" hidden>
+            <p>2022 hits content tttttttttt</p>
         </div>
     </div>
 </div>
 
-
 <script>
 document.getElementById("dataset-options").addEventListener("change", function() {
-    document.querySelector(".option-1").hidden = true;
-    document.querySelector(".option-2").hidden = true;
-    document.querySelector(".option-3").hidden = true;
+    document.querySelector("#option-1").hidden = true;
+    document.querySelector("#option-2").hidden = true;
+    document.querySelector("#option-3").hidden = true;
+    document.querySelector("#option-4").hidden = true;
 
     var selected = this.value;
     if (selected === "1") {
-        document.querySelector(".option-1").hidden = false;
+        document.querySelector("#option-1").hidden = false;
     } 
-    else if (selected === '2') {
-        document.querySelector(".option-2").hidden = false;
+    else if (selected === "2") {
+        document.querySelector("#option-2").hidden = false;
     } 
-    else if (selected === '3') {
-        document.querySelector(".option-3").hidden = false;
+    else if (selected === "3") {
+        document.querySelector("#option-3").hidden = false;
+    }
+    else if (selected === "4") {
+        document.querySelector("#option-4").hidden = false;
     }
 }
 );
