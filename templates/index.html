@@ -13,7 +13,9 @@
 
 <hr class="gradient">
 
-<p id="dataset-desc">Here, you can view the data analysis plots within each of these years' most listened to songs, and the predicted moods inside the playlists. Choose a dataset between the years of 2019 - 2022 (before, during, and after COVID-19 lockdowns):</p>
+<p id="dataset-desc">Here you can view the data analysis plots within each of these years' most listened to songs, and the predicted moods inside the playlists. 
+    <br>
+    Choose a dataset between the years of 2019 - 2022 (before, during, and after COVID-19 lockdowns):</p>
 
 <div class="menu-container">
     <select name="dropdown" id="dataset-options">
@@ -30,7 +32,6 @@
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVRSukIED0e9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div> 
             <div class="image-container">
-
                 <img src="{{ url_for('static', filename='images/Mood_Count_2019.png') }}" alt="Mood Count 2019" class="img-mood-count">
                 <div class="right-text">
                     <p id="text-1">In the predicted moods of the Top Hits of 2019, we saw that there were:</p>
@@ -55,21 +56,124 @@
                 <img src="{{ url_for('static', filename='images/ValenceSentimentMood_Scatter_2019.png') }}" alt="Scatter Plot of Valence, Sentiment, Moods of 2019" class="img-valence-sentiment-mood">
                 <div class="left-text">
                     <p id="text-4">This scatter plot shows a comparison between Spotify's valence scores, our lyric sentiment analysis scores, and how our predicted moods correspond.
+                        <br><br>
                         A higher positive valence is more likely to be a happier song, and a higher sentiment score is more likely to represent a positive song.
                     </p>
                 </div>
             
             </div>
         </div>
+
         <div id="option-2" hidden>
-            <p>2020 hits content ttttttttttttttttt</p>
-        </div>
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2fmTTbBkXi8pewbUvG3CeZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div> 
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='images/Mood_Count_2020.png') }}" alt="Mood Count 2020" class="img-mood-count">
+                    <div class="right-text">
+                        <p id="text-1">In the predicted moods of the Top Hits of 2020, we saw that there were:</p>
+                        <ul>
+                            <li>40 Excited Songs</li>
+                            <li>22 Calm Songs</li>
+                            <li>23 Happy Songs</li>
+                            <li>15 Sad Songs</li>
+                        </ul>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceMood_Jitter_2020.png') }}" alt="Valence-Mood Jitter Plot 2020" class="img-valence-mood-jitter">
+                    <div class="left-text">
+                        <p id="text-2">With this jitter plot, we can see the range of valence scores across our predicted moods in 2020. In this plot, we can see that our predictions somewhat match Spotify's valence score, where a higher value is more likely to represent a positive song.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceBoxPlot_2020.png') }}" alt="Distribution of Valence Box Plot 2020" class="img-valence-box-plot">
+                    <div class="right-text">
+                        <p id="text-3">This box plot shows the distribution of valence scores across our predicted moods in the Top Hits of 2020, where the notch represents the median value.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceSentimentMood_Scatter_2020.png') }}" alt="Scatter Plot of Valence, Sentiment, Moods of 2020" class="img-valence-sentiment-mood">
+                    <div class="left-text">
+                        <p id="text-4">This scatter plot shows a comparison between Spotify's valence scores, our lyric sentiment analysis scores, and how our predicted moods correspond.
+                            <br><br>
+                            A higher positive valence is more likely to be a happier song, and a higher sentiment score is more likely to represent a positive song.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+
         <div id="option-3" hidden>
-            <p>2021 hits content ttttttttttttttttttttttt</p>
-        </div>
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5GhQiRkGuqzpWZSE7OU4Se?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div> 
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='images/Mood_Count_2021.png') }}" alt="Mood Count 2021" class="img-mood-count">
+                    <div class="right-text">
+                        <p id="text-1">In the predicted moods of the Top Hits of 2021, we saw that there were:</p>
+                        <ul>
+                            <li>37 Excited Songs</li>
+                            <li>27 Calm Songs</li>
+                            <li>25 Happy Songs</li>
+                            <li>11 Sad Songs</li>
+                        </ul>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceMood_Jitter_2021.png') }}" alt="Valence-Mood Jitter Plot 2021" class="img-valence-mood-jitter">
+                    <div class="left-text">
+                        <p id="text-2">With this jitter plot, we can see the range of valence scores across our predicted moods in 2021. In this plot, we can see that our predictions somewhat match Spotify's valence score, where a higher value is more likely to represent a positive song.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceBoxPlot_2021.png') }}" alt="Distribution of Valence Box Plot 2021" class="img-valence-box-plot">
+                    <div class="right-text">
+                        <p id="text-3">This box plot shows the distribution of valence scores across our predicted moods in the Top Hits of 2021, where the notch represents the median value.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceSentimentMood_Scatter_2021.png') }}" alt="Scatter Plot of Valence, Sentiment, Moods of 2021" class="img-valence-sentiment-mood">
+                    <div class="left-text">
+                        <p id="text-4">This scatter plot shows a comparison between Spotify's valence scores, our lyric sentiment analysis scores, and how our predicted moods correspond.
+                            <br><br>
+                            A higher positive valence is more likely to be a happier song, and a higher sentiment score is more likely to represent a positive song.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+
         <div id="option-4" hidden>
-            <p>2022 hits content tttttttttt</p>
-        </div>
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/56r5qRUv3jSxADdmBkhcz7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div> 
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='images/Mood_Count_2022.png') }}" alt="Mood Count 2022" class="img-mood-count">
+                    <div class="right-text">
+                        <p id="text-1">In the predicted moods of the Top Hits of 2022, we saw that there were:</p>
+                        <ul>
+                            <li>37 Excited Songs</li>
+                            <li>14 Calm Songs</li>
+                            <li>32 Happy Songs</li>
+                            <li>17 Sad Songs</li>
+                        </ul>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceMood_Jitter_2022.png') }}" alt="Valence-Mood Jitter Plot 2022" class="img-valence-mood-jitter">
+                    <div class="left-text">
+                        <p id="text-2">With this jitter plot, we can see the range of valence scores across our predicted moods in 2022. In this plot, we can see that our predictions somewhat match Spotify's valence score, where a higher value is more likely to represent a positive song.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceBoxPlot_2022.png') }}" alt="Distribution of Valence Box Plot 2022" class="img-valence-box-plot">
+                    <div class="right-text">
+                        <p id="text-3">This box plot shows the distribution of valence scores across our predicted moods in the Top Hits of 2022, where the notch represents the median value.</p>
+                    </div>
+    
+                    <img src="{{ url_for('static', filename='images/ValenceSentimentMood_Scatter_2022.png') }}" alt="Scatter Plot of Valence, Sentiment, Moods of 2022" class="img-valence-sentiment-mood">
+                    <div class="left-text">
+                        <p id="text-4">This scatter plot shows a comparison between Spotify's valence scores, our lyric sentiment analysis scores, and how our predicted moods correspond.
+                            <br><br>
+                            A higher positive valence is more likely to be a happier song, and a higher sentiment score is more likely to represent a positive song.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>                 
     </div>
 </div>
 

@@ -1,5 +1,6 @@
 body {
     background-color: #2d3036;
+    overflow-y: scroll;
 }
 
 .navbar {
@@ -102,6 +103,7 @@ hr.gradient {
 }
 
 .spotify-embed {
+    /* margin-top: 50px; */
     margin-bottom: 20px;
 }
 
