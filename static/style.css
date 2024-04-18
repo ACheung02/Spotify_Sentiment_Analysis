@@ -91,10 +91,97 @@ hr.gradient {
     width: 150px; 
     height: 35px;
     font-size: 16px;
-    background-color: #ffffff
+    background-color: #1db954; 
+    border-radius: 5px;
+    border-width: 0;
 }
 
-/* .spotify-embed {
-    width: 100%;
-} */
+#dataset-options:hover {
+    background-color: #1db954; 
+    cursor: pointer;
+}
 
+.spotify-embed {
+    margin-bottom: 20px;
+}
+
+.img-mood-count {
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+    transition:transform 0.25s ease;
+    border: 3px solid #1db954;
+    border-radius: 3px;
+
+    float: left;
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+.img-valence-mood-jitter {
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+    transition:transform 0.25s ease;
+    border: 3px solid #1db954;
+    border-radius: 3px;
+
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+.img-valence-box-plot {
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+    transition:transform 0.25s ease;
+    border: 3px solid #1db954;
+    border-radius: 3px;
+
+    float: left;
+    margin-top: 11%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+
+.img-valence-sentiment-mood {
+    width: 55%;
+    height: 55%;
+    margin: 10px;
+    transition:transform 0.25s ease;
+    border: 3px solid #1db954;
+    border-radius: 3px;
+
+    float: right;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    margin-left: 3%;
+}
+
+.image-container > img:hover { /* hovering over the images enlarges them */
+    transform: scale(1.3);
+  }
+
+#text-1 {
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+#text-2 {
+    font-size: 20px;
+    padding-top: 10%;
+    text-align: right;
+}
+
+#text-3 {
+    font-size: 20px;
+    padding-top: 16%;
+}
+
+#text-4 {
+    font-size: 20px;
+    padding-top: 15%;
+    text-align: right;
+}
