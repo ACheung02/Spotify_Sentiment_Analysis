@@ -228,7 +228,7 @@ hr.gradient {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .accuracy-chart-image {
@@ -242,6 +242,13 @@ hr.gradient {
 .accuracy-chart > img:hover { 
     transform: scale(1.6);
   }
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .table {
     width: 25%;
