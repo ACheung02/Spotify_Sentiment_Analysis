@@ -3,7 +3,7 @@
 {% block content %}
 <div class="subheading">Choosing a Machine Learning Model</div>
 
-<div class="description">In this project, I tested four different machine learning classification models to predict the mood of the songs in a given playlist, which was trained using a dataset I created: Gaussian Naive Bayes, Support Vector Classifier, Decision Tree, and Logistic Regression. By using different measures to test which was the most accurate (precision, recall, F1-score), I decided to use logistic regression for the final implementation as it had the best scores.</div>
+<div class="description">In this project, I tested four different machine learning classification models to predict the mood of the songs in a given playlist, which was trained using a dataset I created: Gaussian Naive Bayes, Support Vector Classifier, Decision Tree, and Logistic Regression. By using different measures to test which was the most accurate (precision, recall, F1-score), I decided to use logistic regression for the final implementation as it had the best results.</div>
 
 <div class="confusion-matrix">
     <img src="{{ url_for('static', filename='images/gnb_confusion_matrix.png') }}" alt="Gaussian Naive Bayes Confusion Matrix" class="confusion-matrix-image">
@@ -18,7 +18,7 @@
 
 <hr class="gradient">
 
-<div class="description">In the confusion matrices, we can see how logistic regression has the greatest number of predicted moods matching the true moods for all except "Calm". When we compare the accuracies we see that logistic regression performs the best, where the accuracy is how many correctly classified instances there are over the total number of instances. However, this may not always be the best measure if the dataset is not completely balanced (there are slight differences in number of songs per mood in the dataset). So, we can look at other metrics to compare the models:</div>
+<div class="description">In the confusion matrices, we can see how logistic regression has the greatest number of predicted moods matching the true moods for all except "Calm". When we compare the accuracies we see that logistic regression performs the best, where the accuracy is the number of correctly classified instances over the total number of instances. However, this may not always be the best measure if the dataset is not completely balanced (there are slight differences in number of songs per mood in the dataset). So, we can look at other metrics to compare the models:</div>
 
 <div class="table-container">
     <div class="table">

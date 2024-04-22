@@ -1,6 +1,36 @@
 {% extends 'base.html' %}
-{% block title %} Using sentiment analysis on lyrics {% endblock %} 
+{% block title %} Using Sentiment Analysis on Lyrics {% endblock %} 
 {% block content %}
-<p>Sentiment analysis page</p>
+<div class="subheading">Using Sentiment Analysis on Lyrics</div> 
+
+<div class="description">Part of this project's intention was to see if sentiment analysis could be a viable approach to determine the mood of a song. Using the VADER (Valence Aware Dictionary and sEntiment Reasoner) Python module to determine the sentiment of the lyrics in the songs alongside Spotify's track audio features, a classification of mood could be predicted using four labels: Happy, Sad, Excited, Calm.
+<hr class="gradient">
+However, whilst the overall predictions are fairly accurate, the sentiment analysis of the lyrics alone is not the most reliable feature to predict a song's mood. Multiple reasons for this could be attributed; the sentiment of a song's lyrics could be opposite to the sound of the song which would affect Spotify's audio features (e.g., an upbeat song with sad lyrics), words can have double meanings, and the use of slang and wordplay (especially in genres like rap) can be difficult to interpret.
+</div>
+
+<div class="sentiment-analysis-img">
+    <img src="{{ url_for('static', filename='images/ValenceSentimentMood_Scatter_Dataset.png') }}" alt="Scatter Plot of Valence, Sentiment, Moods of the entire dataset" class="img-valence-sentiment-mood2">
+</div>
+
+<div class="description">
+    In this scatter plot of the entire dataset, the valence scores are against the sentiment analysis score and the moods are colour-coded accordingly so we can compare the accuracy/effectiveness of sentiment analysis. The sentiment analysis values uses the compound score from VADER, which is a single 'normalised, weighted composite score'.
+    <br><br>
+    Though there are clusters where we would expect, such as happy songs being in the top right to indicate both a high valence and VADER score, there are some which do not fit our hypothesis. For example, there is a fairly dense cluster of sad songs with high VADER scores and low valence, which could be due to the reasons mentioned above.
+</div>
+
+<hr class="gradient">
+
+<div class="description">
+    You can view the playlist of songs used for each mood to create the entire dataset here:
+</div>
+
+<div class="spotify-container">
+    <div class="spotify-embed">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SQyVxcMYRxWfPfr5fm0JK?utm_source=generator" width="24%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0pV6pPswoQSFSDmhZ7lYeN?utm_source=generator" width="24%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/18Phl23oHX8EtqVSv3meh2?utm_source=generator" width="24%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6vHM1zOGd3tRJnBHY7L5OS?utm_source=generator" width="24%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
 {% endblock %}
 
