@@ -37,13 +37,14 @@ body {
 }
 
 .container {
-    padding-top: 50px;
+    padding-top: 20px;
     color: #ffffff;
 }
 
 #intro {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
 }
 
 .col-12 {
@@ -186,4 +187,89 @@ hr.gradient {
     font-size: 20px;
     padding-top: 15%;
     text-align: right;
+}
+
+/* ------------------------------------------------------------ */
+/* machinelearning.html page */
+.subheading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.confusion-matrix {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.confusion-matrix-image {
+    width: 24%;
+    height: auto;
+    transition:transform 0.25s ease;
+    border: 2px solid #1db954;
+    border-radius: 2px;
+}
+
+.confusion-matrix > img:hover { 
+    transform: scale(1.6);
+  }
+
+.accuracy-chart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.accuracy-chart-image {
+    width: 50%;
+    height: auto;
+    transition:transform 0.25s ease;
+    border: 2px solid #1db954;
+    border-radius: 2px;
+}
+
+.accuracy-chart > img:hover { 
+    transform: scale(1.6);
+  }
+
+.table {
+    width: 25%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-bottom: 5%;
+}
+
+.table1, .table2, .table3, .table4 {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.table th, .table td:first-child {
+    background-color: #1DB954;
+}
+
+.table td, .table th {
+    padding: 5px; 
+}
+
+ .table th:first-child {  /* only name of model is in bold text */
+    font-weight: bold;
+    text-align: center;
+}
+
+.table th:not(:first-child) {
+    font-weight: normal;
 }
