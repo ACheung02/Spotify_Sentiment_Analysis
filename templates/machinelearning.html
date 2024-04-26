@@ -5,7 +5,7 @@
 
 <div class="description">In this project, I tested four different machine learning classification models to predict the mood of the songs in a given playlist, which was trained using a dataset I created: Gaussian Naive Bayes, Support Vector Classifier, Decision Tree, and Logistic Regression. By using different measures to test which was the most accurate (precision, recall, F1-score), I decided to use logistic regression for the final implementation as it had the best results.</div>
 
-<div class="confusion-matrix">
+<div class="confusion-matrix-container">
     <img src="{{ url_for('static', filename='images/gnb_confusion_matrix.png') }}" alt="Gaussian Naive Bayes Confusion Matrix" class="confusion-matrix-image">
     <img src="{{ url_for('static', filename='images/svc_confusion_matrix.png') }}" alt="Support Vector Classifier Confusion Matrix" class="confusion-matrix-image">
     <img src="{{ url_for('static', filename='images/dtree_confusion_matrix.png') }}" alt="Decision Tree Confusion Matrix" class="confusion-matrix-image">
@@ -20,294 +20,312 @@
 
 <div class="description">In the confusion matrices, we can see how logistic regression has the greatest number of predicted moods matching the true moods for all except "Calm". When we compare the accuracies we see that logistic regression performs the best, where the accuracy is the number of correctly classified instances over the total number of instances. However, this may not always be the best measure if the dataset is not completely balanced (there are slight differences in number of songs per mood in the dataset). So, we can look at other metrics to compare the models:</div>
 
-<div class="table-container">
-    <div class="table">
-        <table class="table1">
-            <thead>
-            <tr>
-            <th>Gaussian NB</th>
-            <th>Precision</th>
-            <th>Recall</th>
-            <th>F1-Score</th>
-            <th>Support</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Calm</td>
-            <td>0.48</td>
-            <td>0.68</td>
-            <td>0.57</td>
-            <td>47</td>
-            </tr>
-            <tr>
-            <td>Excited</td>
-            <td>0.76</td>
-            <td>0.69</td>
-            <td>0.72</td>
-            <td>51</td>
-            </tr>
-            <tr>
-            <td>Happy</td>
-            <td>0.49</td>
-            <td>0.63</td>
-            <td>0.55</td>
-            <td>35</td>
-            </tr>
-            <tr>
-            <td>Sad</td>
-            <td>0.95</td>
-            <td>0.59</td>
-            <td>0.73</td>
-            <td>64</td>
-            </tr>
-            <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            </tr>
-            <tr>
-            <td>Accuracy</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>0.64</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Macro Avg</td>
-            <td>0.67</td>
-            <td>0.65</td>
-            <td>0.64</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Weighted Avg</td>
-            <td>0.71</td>
-            <td>0.64</td>
-            <td>0.66</td>
-            <td>197&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
+<!-- <div class="table-container"> -->
+<div class="row">
+    <div class="col-12 table-container">
+        <div class="table-responsive">
+            <div class="table">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                    <th>Gaussian NB</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>Support</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Calm</td>
+                    <td>0.48</td>
+                    <td>0.68</td>
+                    <td>0.57</td>
+                    <td>47</td>
+                    </tr>
+                    <tr>
+                    <td>Excited</td>
+                    <td>0.76</td>
+                    <td>0.69</td>
+                    <td>0.72</td>
+                    <td>51</td>
+                    </tr>
+                    <tr>
+                    <td>Happy</td>
+                    <td>0.49</td>
+                    <td>0.63</td>
+                    <td>0.55</td>
+                    <td>35</td>
+                    </tr>
+                    <tr>
+                    <td>Sad</td>
+                    <td>0.95</td>
+                    <td>0.59</td>
+                    <td>0.73</td>
+                    <td>64</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Accuracy</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>0.64</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Macro Avg</td>
+                    <td>0.67</td>
+                    <td>0.65</td>
+                    <td>0.64</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Weighted Avg</td>
+                    <td>0.71</td>
+                    <td>0.64</td>
+                    <td>0.66</td>
+                    <td>197&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-    <div class="table">
-        <table class="table2">
-            <thead>
-            <tr>
-            <th>SVC</th>
-            <th>Precision</th>
-            <th>Recall</th>
-            <th>F1-Score</th>
-            <th>Support</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Calm</td>
-            <td>0.57</td>
-            <td>0.53</td>
-            <td>0.55</td>
-            <td>47</td>
-            </tr>
-            <tr>
-            <td>Excited</td>
-            <td>0.73</td>
-            <td>0.65</td>
-            <td>0.69</td>
-            <td>51</td>
-            </tr>
-            <tr>
-            <td>Happy</td>
-            <td>0.46</td>
-            <td>0.74</td>
-            <td>0.57</td>
-            <td>35</td>
-            </tr>
-            <tr>
-            <td>Sad</td>
-            <td>0.88</td>
-            <td>0.72</td>
-            <td>0.79</td>
-            <td>64</td>
-            </tr>
-            <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            </tr>
-            <tr>
-            <td>Accuracy</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>0.66</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Macro Avg</td>
-            <td>0.66</td>
-            <td>0.66</td>
-            <td>0.65</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Weighted Avg</td>
-            <td>0.70</td>
-            <td>0.66</td>
-            <td>0.67</td>
-            <td>197&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="col-12 table-container">
+        <div class="table-responsive">
+            <div class="table">
+                <table class="table2">
+                    <thead>
+                    <tr>
+                    <th>SVC</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>Support</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Calm</td>
+                    <td>0.57</td>
+                    <td>0.53</td>
+                    <td>0.55</td>
+                    <td>47</td>
+                    </tr>
+                    <tr>
+                    <td>Excited</td>
+                    <td>0.73</td>
+                    <td>0.65</td>
+                    <td>0.69</td>
+                    <td>51</td>
+                    </tr>
+                    <tr>
+                    <td>Happy</td>
+                    <td>0.46</td>
+                    <td>0.74</td>
+                    <td>0.57</td>
+                    <td>35</td>
+                    </tr>
+                    <tr>
+                    <td>Sad</td>
+                    <td>0.88</td>
+                    <td>0.72</td>
+                    <td>0.79</td>
+                    <td>64</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Accuracy</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>0.66</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Macro Avg</td>
+                    <td>0.66</td>
+                    <td>0.66</td>
+                    <td>0.65</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Weighted Avg</td>
+                    <td>0.70</td>
+                    <td>0.66</td>
+                    <td>0.67</td>
+                    <td>197&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-    <div class="table">
-        <table class="table3">
-            <thead>
-            <tr>
-            <th>Decision Tree</th>
-            <th>Precision</th>
-            <th>Recall</th>
-            <th>F1-Score</th>
-            <th>Support</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Calm</td>
-            <td>0.50</td>
-            <td>0.60</td>
-            <td>0.54</td>
-            <td>47</td>
-            </tr>
-            <tr>
-            <td>Excited</td>
-            <td>0.64</td>
-            <td>0.55</td>
-            <td>0.59</td>
-            <td>51</td>
-            </tr>
-            <tr>
-            <td>Happy</td>
-            <td>0.40</td>
-            <td>0.54</td>
-            <td>0.46</td>
-            <td>35</td>
-            </tr>
-            <tr>
-            <td>Sad</td>
-            <td>0.88</td>
-            <td>0.67</td>
-            <td>0.76</td>
-            <td>64</td>
-            </tr>
-            <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            </tr>
-            <tr>
-            <td>Accuracy</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>0.60</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Macro Avg</td>
-            <td>0.60</td>
-            <td>0.59</td>
-            <td>0.59</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Weighted Avg</td>
-            <td>0.64</td>
-            <td>0.60</td>
-            <td>0.61</td>
-            <td>197&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="col-12 table-container">
+        <div class="table-responsive">
+            <div class="table">
+                <table class="table3">
+                    <thead>
+                    <tr>
+                    <th>Decision Tree</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>Support</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Calm</td>
+                    <td>0.50</td>
+                    <td>0.60</td>
+                    <td>0.54</td>
+                    <td>47</td>
+                    </tr>
+                    <tr>
+                    <td>Excited</td>
+                    <td>0.64</td>
+                    <td>0.55</td>
+                    <td>0.59</td>
+                    <td>51</td>
+                    </tr>
+                    <tr>
+                    <td>Happy</td>
+                    <td>0.40</td>
+                    <td>0.54</td>
+                    <td>0.46</td>
+                    <td>35</td>
+                    </tr>
+                    <tr>
+                    <td>Sad</td>
+                    <td>0.88</td>
+                    <td>0.67</td>
+                    <td>0.76</td>
+                    <td>64</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Accuracy</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>0.60</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Macro Avg</td>
+                    <td>0.60</td>
+                    <td>0.59</td>
+                    <td>0.59</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Weighted Avg</td>
+                    <td>0.64</td>
+                    <td>0.60</td>
+                    <td>0.61</td>
+                    <td>197&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-    <div class="table">
-        <table class="table4">
-            <thead>
-            <tr>
-            <th>Log Regr.</th>
-            <th>Precision</th>
-            <th>Recall</th>
-            <th>F1-Score</th>
-            <th>Support</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Calm</td>
-            <td>0.66</td>
-            <td>0.49</td>
-            <td>0.56</td>
-            <td>47</td>
-            </tr>
-            <tr>
-            <td>Excited</td>
-            <td>0.74</td>
-            <td>0.73</td>
-            <td>0.73</td>
-            <td>51</td>
-            </tr>
-            <tr>
-            <td>Happy</td>
-            <td>0.46</td>
-            <td>0.74</td>
-            <td>0.57</td>
-            <td>35</td>
-            </tr>
-            <tr>
-            <td>Sad</td>
-            <td>0.88</td>
-            <td>0.77</td>
-            <td>0.82</td>
-            <td>64</td>
-            </tr>
-            <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            </tr>
-            <tr>
-            <td>Accuracy</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>0.69</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Macro Avg</td>
-            <td>0.68</td>
-            <td>0.68</td>
-            <td>0.67</td>
-            <td>197</td>
-            </tr>
-            <tr>
-            <td>Weighted Avg</td>
-            <td>0.72</td>
-            <td>0.69</td>
-            <td>0.69</td>
-            <td>197&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="col-12 table-container">
+        <div class="table-responsive">
+            <div class="table">
+                <table class="table4">
+                    <thead>
+                    <tr>
+                    <th>Log Regr.</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>Support</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Calm</td>
+                    <td>0.66</td>
+                    <td>0.49</td>
+                    <td>0.56</td>
+                    <td>47</td>
+                    </tr>
+                    <tr>
+                    <td>Excited</td>
+                    <td>0.74</td>
+                    <td>0.73</td>
+                    <td>0.73</td>
+                    <td>51</td>
+                    </tr>
+                    <tr>
+                    <td>Happy</td>
+                    <td>0.46</td>
+                    <td>0.74</td>
+                    <td>0.57</td>
+                    <td>35</td>
+                    </tr>
+                    <tr>
+                    <td>Sad</td>
+                    <td>0.88</td>
+                    <td>0.77</td>
+                    <td>0.82</td>
+                    <td>64</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Accuracy</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>0.69</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Macro Avg</td>
+                    <td>0.68</td>
+                    <td>0.68</td>
+                    <td>0.67</td>
+                    <td>197</td>
+                    </tr>
+                    <tr>
+                    <td>Weighted Avg</td>
+                    <td>0.72</td>
+                    <td>0.69</td>
+                    <td>0.69</td>
+                    <td>197&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
+<!-- </div> -->
 {% endblock %}
 
